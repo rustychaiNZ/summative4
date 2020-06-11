@@ -158,7 +158,24 @@ function mytheme_customize_css(){
 	.btn-success:active{
 		background-color: <?php echo get_theme_mod('general_accentColor', '#c1292e') ?> !important;
 		border-color: <?php echo get_theme_mod('general_accentColor', '#c1292e') ?> !important;
-	}	
+	}
+	.button{
+		border-color: <?php echo get_theme_mod('general_accentColor', '#c1292e') ?> !important;
+		color: <?php echo get_theme_mod('general_accentColor', '#c1292e') ?> !important;
+	}
+	.button:hover{
+		background-color: <?php echo get_theme_mod('general_accentColor', '#c1292e') ?> !important;
+		border-color: <?php echo get_theme_mod('general_accentColor', '#c1292e') ?> !important;
+		color: #ffffff !important;
+	}
+	.button:focus{
+		background-color: <?php echo get_theme_mod('general_accentColor', '#c1292e') ?> !important;
+		border-color: <?php echo get_theme_mod('general_accentColor', '#c1292e') ?> !important;
+	}
+	.button:active{
+		background-color: <?php echo get_theme_mod('general_accentColor', '#c1292e') ?> !important;
+		border-color: <?php echo get_theme_mod('general_accentColor', '#c1292e') ?> !important;
+	}		
 	/* --- Banner control --- */
 	.page-heading{
 		color: <?php echo get_theme_mod('general_headerColor', '#000000')?>;
@@ -167,6 +184,9 @@ function mytheme_customize_css(){
 	/* --- Top bar controls --- */
 	.top-bar{
 		background-color: <?php echo get_theme_mod('general_primaryColor', '#235789') ?>;
+	}
+	.dropdown-menu{
+		background-color: <?php echo get_theme_mod('general_primaryColor', '#235789') ?>;		
 	}
 	.top-bar a{
 		color: <?php echo get_theme_mod('topNav_linkColor', '#ffffff') ?> !important;

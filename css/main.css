@@ -50,6 +50,9 @@ footer p{
 	box-shadow: inset 0 -3px 5px rgba(51, 51, 51, 0.5);
 	height: 30vh;
 	padding-top: 15px;
+	background-attachment: scroll;
+	background-position: center;
+	background-size: cover;
 }
 
 /*Table*/
@@ -108,6 +111,8 @@ a .social-icon:hover{
 }
 /* -- Front page -- */
 .header-frontpage{
+	background-position: center;
+	background-size: cover;
 	min-height: 90vh;
 }
 .frontpage-h1{
@@ -197,11 +202,32 @@ a .social-icon:hover{
 }
 .btn-success:focus{
 	box-shadow: none !important;
+	color: white !important;
+}
+.btn-success:active{
+	color: white !important;
 }
 .btn-success{
 	background-color: transparent !important;
 	border-width: 2px !important;
 	border-style: solid !important;
+}
+.button{
+	border-radius: 5px !important;
+	background-color: transparent !important;
+	border-width: 2px !important;
+	border-style: solid !important;
+	font-weight: 100;
+}
+.button:focus{
+	box-shadow: none !important;
+	color: white !important;
+}
+.button:active{
+	color: white !important;
+}
+.woocommerce a.button{
+	font-weight: 400;
 }
 .btn-block{
 	width: 100% !important;
@@ -236,7 +262,12 @@ a .social-icon:hover{
 	padding: 0 1em;
 }
 .dropdown-menu{
+	margin-top: 15px;
 	border: 0;
+}
+.dropdown-menu a{
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 .top-bar li a{
 	line-height: 10px;
@@ -326,8 +357,12 @@ a .social-icon:hover{
 }
 /*Sidebar Menu end*/
 
+/* Woocommerce */
 .product-heading{
 	text-align: center;
+}
+.woocommerce-input-wrapper{
+	width: 65%;
 }
 
 .gradient-head{
@@ -349,8 +384,21 @@ a .social-icon:hover{
 	.social-icon{
 		font-size: 4.5em !important;
 	}
+	.widget{
+		border: none;
+		max-width: 100%;
+	}
+	.widget .widget li{
+		overflow-x: auto;
+		display: inline-block;
+		padding-right: 1em;
+	}
 	.widget li{
+		display: block;
 		padding-left: 5px;
+	}
+	.cat-parent{
+		display: block !important;
 	}
 }
 
@@ -368,6 +416,19 @@ a .social-icon:hover{
 	.top-bar li a{
 		line-height: 50px;
 		font-size: 1.3em;
+	}
+	.dropdown-menu{
+		margin-top: 0;
+	}
+	.dropdown-menu a{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.current-menu-item a{
+		border: none;
+	}
+	.dropdown-menu li a{
+		line-height: 3px;		
 	}
 	.display-1{
 		font-size: 5em;

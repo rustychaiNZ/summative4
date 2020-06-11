@@ -142,7 +142,7 @@ register_default_headers( array(
 $customHeaderDefaults = array(
 	'width' => 1920,
 	'height' => 1080,
-	'default-image' => get_template_directory_uri() . '/images/fillerHeader.png'
+	'default-image' => get_template_directory_uri() . '/images/fillerHeader.jpg'
 );
 add_theme_support('custom-header', $customHeaderDefaults);
 
