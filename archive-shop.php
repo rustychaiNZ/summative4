@@ -1,3 +1,4 @@
+<!-- Gets special header for blog -->
 <?php get_header(); ?>
 
 <!-- Basic page layout for all future created pages -->
@@ -12,10 +13,15 @@
 					</div>
 				</div>
 				<div class="col-md-8">
-					<?php get_template_part('includes/section','content'); ?>
+					<?php get_template_part('includes/section','archive'); ?>
+					<p>Hello world</p>
 				</div>
 			</div>
 		<?php endif; ?>
+		<div class="row pl-3">
+			<?php previous_posts_link();  ?>
+	   		<?php next_posts_link();  ?>
+		</div>
 	</div>
 
 <?php get_footer(); ?>

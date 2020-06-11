@@ -56,7 +56,7 @@ function theme_setup(){
 			'primary' => __('Primary Menu', 'electricianTheme'),
 			'front-page' => 'Front page menu location',
 			'mobile-menu' => 'Mobile Menu Location',
-			'footer-menu' => 'Footer Menu Location',
+			'sidebar-menu' => 'Side Bar Menu Location',
 			'social-menu' => 'Social media menu controls'
 		)
 	);
@@ -68,14 +68,47 @@ function my_sidebars(){
 		array(
 			'name' => 'Blog Sidebar',
 			'id' => 'blog-sidebar',
-			'before_title' => '<h4 class="widget-title">',
-			'after_title' => '</h4>'
+			'before_title' => '<h5 class="widget-title">',
+			'after_title' => '</h5>'
 		)
 	);
 }
 
 // Hook
 add_action('widgets_init', 'my_sidebars');
+
+// Custom Post type for services
+function post_type(){
+	$args = array(
+		'labels' => array(
+			'name' => 'Services',
+			'singular_name' => 'Service',
+		),
+		'hierarchical' => true, //boolean value toggles between pages & posts without labels
+		'menu_icon' => 'dashicons-plugins-checked',//get icon name from wordpress dashicons
+		'public' => true,
+		'has_archive' => true,
+		'supports' => array('title','editor','thumbnail','custom-fields' ),// if one of the argument is  not mentioned,
+	);
+	register_post_type('services',$args);
+}
+add_action('init','post_type');
+
+// Taxanomy
+function products_taxonomy(){
+	$args = array(
+		'labels' => array(
+			'name' => 'Types',
+			'singular_name' => 'Type',
+    	),
+		'public' => true,
+		'hierarchical' => true,//false works like tags, true like catgories without labels
+  );
+  register_taxonomy('types', array('products'),$args);
+
+}
+
+add_action('init', 'products_taxonomy');
 
 
 // Controls the size of the images rendered in the browser

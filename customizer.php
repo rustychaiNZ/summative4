@@ -132,7 +132,7 @@ function mytheme_customize_css(){
 	.primary-color-background{
 		background-color: <?php echo get_theme_mod('general_primaryColor', '#235789') ?>;
 	}
-	.widget .widget{
+	.widget{
 		border-color: <?php echo get_theme_mod('general_primaryColor', '#235789') ?>;
 	}
 	.accent-color{

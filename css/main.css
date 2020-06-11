@@ -213,7 +213,7 @@ a .social-icon:hover{
 	display: block !important;
 	height: auto;
 	margin: auto;
-	max-width: 50px;
+	max-width: 50px !important;
 }
 .custom-logo-container{
 	margin: auto;
@@ -307,13 +307,15 @@ a .social-icon:hover{
 
 /*Sidebar Menu*/
 .widget{
-	top: 100px;
+	border-width: 3px;
+	border-radius: 5px;
+	border-style: solid;
+	max-width: 220px;
+	padding: 3px 3px;
+	top: 10px;
 }
 .widget .widget{
-	border: 3px black solid;
-	border-radius: 5px;
-	max-width: 220px;
-	padding: 20px 8px;
+	border: none;
 }
 .widget ul{
 	padding: 3px 2px;
