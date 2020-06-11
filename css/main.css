@@ -233,7 +233,7 @@ a .social-icon:hover{
 	top: 0;
 }
 .top-bar li{
-	padding: 0 30px;
+	padding: 0 1em;
 }
 .dropdown-menu{
 	border: 0;
@@ -325,6 +325,10 @@ a .social-icon:hover{
 	padding-left: 15px;
 }
 /*Sidebar Menu end*/
+
+.product-heading{
+	text-align: center;
+}
 
 .gradient-head{
 	background: rgb(46,122,133);

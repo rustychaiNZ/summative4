@@ -46,7 +46,7 @@
 						?>
 					</div>
 				</nav>
-				<h1 class="page-heading pt-3"><?php the_title(); ?></h1>
+				<h1 class="py-3 page-heading"><?php single_cat_title(); ?></h1>
 			</div>
 		<?php endif ?>
 

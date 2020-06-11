@@ -5,16 +5,15 @@
 <div class="page-container">
 	<!-- Basic page layout for all future created pages -->
 	<div class="container">
-		<?php if(is_active_sidebar('blog-sidebar')) :?>
+		<?php if(is_active_sidebar('shop-sidebar')) :?>
 			<div class="row">
 				<div class="col-md-3">
 					<div class="widget">
-						<?php dynamic_sidebar('blog-sidebar'); ?>
+						<?php dynamic_sidebar('shop-sidebar'); ?>
 					</div>
 				</div>
 				<div class="col-md-8">
-					<?php get_template_part('includes/section','archive'); ?>
-					<p>Hello world</p>
+					<?php get_template_part('includes/section','content'); ?>
 				</div>
 			</div>
 		<?php endif; ?>

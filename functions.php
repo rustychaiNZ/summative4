@@ -63,11 +63,26 @@ function theme_setup(){
 }
 
 // Register sidebars
-function my_sidebars(){
+function blog_sidebar(){
 	register_sidebar(
 		array(
 			'name' => 'Blog Sidebar',
 			'id' => 'blog-sidebar',
+			'before_title' => '<h5 class="widget-title">',
+			'after_title' => '</h5>'
+		)
+	);
+}
+
+// Hook
+add_action('widgets_init', 'blog_sidebar');
+
+// Register sidebars
+function my_sidebars(){
+	register_sidebar(
+		array(
+			'name' => 'Shop Sidebar',
+			'id' => 'shop-sidebar',
 			'before_title' => '<h5 class="widget-title">',
 			'after_title' => '</h5>'
 		)

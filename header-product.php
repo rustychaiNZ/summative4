@@ -46,7 +46,6 @@
 						?>
 					</div>
 				</nav>
-				<h1 class="page-heading pt-3"><?php the_title(); ?></h1>
 			</div>
 		<?php endif ?>
 
