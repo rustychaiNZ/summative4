@@ -105,7 +105,7 @@ function mytheme_customize_register( $wp_customize ){
 		'transport' => 'refresh',
 	));
 	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'nav_activeColorControl', array(
-		'label' => __('Link colour', 'electricianTheme'),
+		'label' => __('Active Nav Colour', 'electricianTheme'),
 		'description' => 'Changes the colour of links on the page',
 		'section' => 'colors',
 		'settings' => 'nav_activeColor',
@@ -141,6 +141,9 @@ function mytheme_customize_css(){
 	}
 	.accent-color-background{
 		background-color: <?php echo get_theme_mod('general_accentColor', '#c1292e') ?>;
+	}
+	.header-background{
+		background-color: <?php echo get_theme_mod('general_headerColor', '#000000') ?>;
 	}
 	.btn-success{
 		border-color: <?php echo get_theme_mod('general_accentColor', '#c1292e') ?> !important;

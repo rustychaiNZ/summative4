@@ -14,7 +14,7 @@
 						<!-- Excerpt from the blog entry -->
 						<?php the_excerpt();?>
 						<!-- link to the blog entry -->
-						<a href="<?php the_permalink(); ?>" class="btn btn-success accent-color">More</a>
+						<a href="<?php the_permalink(); ?>" class="btn btn-success accent-color">Read More</a>
 					</div>
 				</div>	
 			<?php endif; ?>
@@ -30,7 +30,7 @@
 						<!-- Excerpt from the blog entry -->
 						<?php the_excerpt();?>
 						<!-- link to the blog entry -->
-						<a href="<?php the_permalink(); ?>" class="btn btn-success accent-color">More</a>
+						<a href="<?php the_permalink(); ?>" class="btn btn-success accent-color">Read More</a>
 					</div>
 				</div>
 			<?php endif ?>

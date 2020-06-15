@@ -134,8 +134,8 @@ add_image_size('largest', 800, 800, false);
 // Header image
 register_default_headers( array(
 	'defaultImage' => array(
-		'url' => get_template_directory_uri() . '/images/fillerHeader.png',
-		'thumbnail_url' => get_template_directory_uri() . '/images/fillerHeader.png',
+		'url' => get_template_directory_uri() . '/images/fillerHeader.jpg',
+		'thumbnail_url' => get_template_directory_uri() . '/images/fillerHeader.jpg',
 		'description' => __('The default image for the custom header.', 'electricianTheme')
 	)
 ));

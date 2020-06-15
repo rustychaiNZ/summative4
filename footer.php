@@ -19,6 +19,11 @@
 				<p class="text-light text-center"><?php echo get_theme_mod('footer_copyrightContainer'); ?></p>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col">
+				<p class="text-light text-center">Powered by <a href="https://wordpress.org/" target="_blank">WordPress</a> <br> Template created by <a href="https://www.russelljohnson.co.nz" target="_blank">Russell Johnson</a></p>
+			</div>
+		</div>
 	</footer>
 </div>
 	<script src="https://use.fontawesome.com/4767738c46.js"></script>
