@@ -25,6 +25,7 @@ function include_jquery(){
 
 // Hook 
 add_action('wp_enqueue_scripts', 'include_jquery');
+add_theme_support( 'title-tag' );
 
 // Load JavaScript
 function load_js(){
