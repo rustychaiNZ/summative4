@@ -66,12 +66,17 @@ footer p{
 
 /*Table*/
 table {
-	width: auto !important;
-	text-align: left;
 	border-collapse: collapse;
+	margin: auto;
+	text-align: left;
+	width: auto !important;
 }
 th{
-	/*color: #f6f6f6;*/
+	color: #f6f6f6;
+	letter-spacing: 1.1px;
+}
+table, td{
+	border: 1px solid #bababa;
 }
 table td, table th {
 	padding: 12px 12px;

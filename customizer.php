@@ -125,6 +125,9 @@ function mytheme_customize_css(){
 	body{
 		background-color: <?php echo get_theme_mod('general_background', '#fffef0') ?>;
 	}
+	th{
+		background-color: <?php echo get_theme_mod('general_primaryColor')?>;
+	}
 	.primary-color{
 		color: <?php echo get_theme_mod('general_primaryColor', '#235789') ?>;
 		border-color: <?php echo get_theme_mod('general_primaryColor', '#235789') ?>;
