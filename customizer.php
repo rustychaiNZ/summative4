@@ -55,6 +55,17 @@ function mytheme_customize_register( $wp_customize ){
 	// --- Content controller end --- //
 
 	// --- Colour Control --- //
+	// Header text colour
+	$wp_customize->add_setting('general_siteHeadingColor', array(
+		'default' => '#000000',
+		'transport' => 'refresh',
+	));
+	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'general_siteHeadingColorControl', array(
+		'label' => __('Heading text colour', 'electricianTheme'),
+		'description' => 'Changes the colour of heading font',
+		'section' => 'colors',
+		'settings' => 'general_siteHeadingColor',
+	)));
 	// Site header color
 	$wp_customize->add_setting('general_headerColor', array(
 		'default' => '#000000',
@@ -62,7 +73,7 @@ function mytheme_customize_register( $wp_customize ){
 	));
 	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'general_headerColorControl', array(
 		'label' => __('Site header colour', 'electricianTheme'),
-		'description' => 'Changes the colour of page header colour',
+		'description' => 'Changes the colour of page header font colour',
 		'section' => 'colors',
 		'settings' => 'general_headerColor',
 	)));
@@ -184,7 +195,10 @@ function mytheme_customize_css(){
 	}		
 	/* --- Banner control --- */
 	.page-heading{
-		color: <?php echo get_theme_mod('general_headerColor', '#000000')?>;
+		color: <?php echo get_theme_mod('general_siteHeadingColor', '#000000')?> !important;
+	}
+	.frontpage-h1{
+		color: <?php echo get_theme_mod('general_siteHeadingColor', '#000000')?> !important;
 	}
 	
 	/* --- Top bar controls --- */
