@@ -73,7 +73,7 @@ function mytheme_customize_register( $wp_customize ){
 	));
 	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'general_headerColorControl', array(
 		'label' => __('Site header colour', 'electricianTheme'),
-		'description' => 'Changes the colour of page header font colour',
+		'description' => 'Changes the colour of page header background colour',
 		'section' => 'colors',
 		'settings' => 'general_headerColor',
 	)));
